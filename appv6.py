@@ -10,11 +10,16 @@ class SistemAlimentacionPeces:
         self.archivo_csv = "historial.csv"
 
         self.especies_peces = {
-            "goldfish": {"frecuencia_diaria": 2, "cantidad_gramos": 0.5, "horarios": ["08:00", "18:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
+            "angel": {"frecuencia_diaria": 2, "cantidad_gramos": 0.8, "horarios": ["07:30", "18:30"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
             "betta": {"frecuencia_diaria": 1, "cantidad_gramos": 0.2, "horarios": ["09:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
+            "corydora": {"frecuencia_diaria": 1, "cantidad_gramos": 0.2, "horarios": ["09:30"], "ayuno_semanal": False, "dia_ayuno": None},
+            "goldfish": {"frecuencia_diaria": 2, "cantidad_gramos": 0.5, "horarios": ["08:00", "18:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
             "guppy": {"frecuencia_diaria": 2, "cantidad_gramos": 0.3, "horarios": ["08:30", "17:30"], "ayuno_semanal": False, "dia_ayuno": None},
+            "molly": {"frecuencia_diaria": 2, "cantidad_gramos": 0.25, "horarios": ["08:00", "17:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
+            "neon_tetra": {"frecuencia_diaria": 2, "cantidad_gramos": 0.1, "horarios": ["08:00", "18:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
+            "platy": {"frecuencia_diaria": 2, "cantidad_gramos": 0.2, "horarios": ["08:00", "18:00"], "ayuno_semanal": False, "dia_ayuno": None},
             "tetra": {"frecuencia_diaria": 2, "cantidad_gramos": 0.4, "horarios": ["08:00", "19:00"], "ayuno_semanal": True, "dia_ayuno": "domingo"},
-            "angel": {"frecuencia_diaria": 2, "cantidad_gramos": 0.8, "horarios": ["07:30", "18:30"], "ayuno_semanal": True, "dia_ayuno": "domingo"}
+            "zebra_danio": {"frecuencia_diaria": 2, "cantidad_gramos": 0.2, "horarios": ["08:30", "18:30"], "ayuno_semanal": True, "dia_ayuno": "domingo"}
         }
 
     def obtener_info_especie(self, especie: str) -> Dict:
